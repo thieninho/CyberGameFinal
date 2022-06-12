@@ -26,7 +26,7 @@ CREATE TABLE Account
 	PassWord NVARCHAR(1000) NOT NULL DEFAULT 0,
 	Type INT NOT NULL  DEFAULT 0 -- 1: admin && 0: staff
 )
-GOv
+GO
 CREATE TABLE OrderCategory
 (
 	id INT IDENTITY PRIMARY KEY,

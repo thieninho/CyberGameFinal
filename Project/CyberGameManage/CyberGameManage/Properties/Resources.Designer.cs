@@ -163,9 +163,39 @@ namespace CyberGameManage.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Daco_46505691 {
+            get {
+                object obj = ResourceManager.GetObject("Daco_46505691", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap desktop {
             get {
                 object obj = ResourceManager.GetObject("desktop", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Dice_Cube_Die_One_1_Game_Luck {
+            get {
+                object obj = ResourceManager.GetObject("Dice Cube Die One 1 Game Luck", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Dice_Cube_Die_Six_6_Game_Luck {
+            get {
+                object obj = ResourceManager.GetObject("Dice Cube Die Six 6 Game Luck", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -203,6 +233,16 @@ namespace CyberGameManage.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Frenkie_de_Jong___FootyRenders1 {
+            get {
+                object obj = ResourceManager.GetObject("Frenkie de Jong - FootyRenders1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Gaming_logo_template_on_transparent_background_PNG {
             get {
                 object obj = ResourceManager.GetObject("Gaming-logo-template-on-transparent-background-PNG", resourceCulture);
@@ -226,6 +266,66 @@ namespace CyberGameManage.Properties {
         internal static System.Drawing.Bitmap LuckyCat2 {
             get {
                 object obj = ResourceManager.GetObject("LuckyCat2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MaxPixel_net_Bet_Throwing_Dots_Throw_Rolling_Dice_Two_Play_312627 {
+            get {
+                object obj = ResourceManager.GetObject("MaxPixel.net-Bet-Throwing-Dots-Throw-Rolling-Dice-Two-Play-312627", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MaxPixel_net_Dice_Cube_Gamble_Four_Dots_Luck_Gambling_Chance_312623 {
+            get {
+                object obj = ResourceManager.GetObject("MaxPixel.net-Dice-Cube-Gamble-Four-Dots-Luck-Gambling-Chance-312623", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MaxPixel_net_Gamble_Game_Dice_Risk_Luck_Three_Roll_Dots_312624 {
+            get {
+                object obj = ResourceManager.GetObject("MaxPixel.net-Gamble-Game-Dice-Risk-Luck-Three-Roll-Dots-312624", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MaxPixel_net_Gamble_Six_Eyes_Luck_Dice_Chance_310333 {
+            get {
+                object obj = ResourceManager.GetObject("MaxPixel.net-Gamble-Six-Eyes-Luck-Dice-Chance-310333", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MaxPixel_net_Game_Play_Five_Gambling_Dice_Bet_Chance_Luck_312622 {
+            get {
+                object obj = ResourceManager.GetObject("MaxPixel.net-Game-Play-Five-Gambling-Dice-Bet-Chance-Luck-312622", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MaxPixel_net_Risk_Cube_Game_Rolling_Throwing_One_Dice_Dot_312625 {
+            get {
+                object obj = ResourceManager.GetObject("MaxPixel.net-Risk-Cube-Game-Rolling-Throwing-One-Dice-Dot-312625", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

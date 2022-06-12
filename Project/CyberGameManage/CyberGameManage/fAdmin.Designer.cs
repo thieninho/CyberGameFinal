@@ -29,8 +29,10 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fAdmin));
-            this.directoryEntry1 = new System.DirectoryServices.DirectoryEntry();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.ptb_exit = new System.Windows.Forms.PictureBox();
             this.tpAccount = new System.Windows.Forms.TabPage();
+            this.dtgvAccount = new System.Windows.Forms.DataGridView();
             this.panel24 = new System.Windows.Forms.Panel();
             this.btnResetPassword = new System.Windows.Forms.Button();
             this.panel25 = new System.Windows.Forms.Panel();
@@ -42,22 +44,18 @@
             this.panel27 = new System.Windows.Forms.Panel();
             this.txbUserName = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.panel23 = new System.Windows.Forms.Panel();
-            this.dtgvAccount = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnShowAccount = new System.Windows.Forms.Button();
             this.btnEditAccount = new System.Windows.Forms.Button();
             this.btnDeleteAccount = new System.Windows.Forms.Button();
             this.btnAddAccount = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tpOrder = new System.Windows.Forms.TabPage();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.dtgvOrder = new System.Windows.Forms.DataGridView();
             this.panel6 = new System.Windows.Forms.Panel();
             this.txbSearchOrderName = new System.Windows.Forms.TextBox();
             this.btnSearchOrder = new System.Windows.Forms.Button();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.btnShowOrder = new System.Windows.Forms.Button();
-            this.btnEditOrder = new System.Windows.Forms.Button();
-            this.btnDeleteOrder = new System.Windows.Forms.Button();
-            this.btnAddOrder = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
             this.nmOrderPrice = new System.Windows.Forms.NumericUpDown();
@@ -68,11 +66,14 @@
             this.panel8 = new System.Windows.Forms.Panel();
             this.txbOrderName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.btnShowOrder = new System.Windows.Forms.Button();
+            this.btnEditOrder = new System.Windows.Forms.Button();
+            this.btnDeleteOrder = new System.Windows.Forms.Button();
+            this.btnAddOrder = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
             this.txbOrderID = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.dtgvOrder = new System.Windows.Forms.DataGridView();
             this.tpBill = new System.Windows.Forms.TabPage();
             this.panel2 = new System.Windows.Forms.Panel();
             this.txbPageBill = new System.Windows.Forms.TextBox();
@@ -86,69 +87,87 @@
             this.dtpkToDate = new System.Windows.Forms.DateTimePicker();
             this.dtpkFromDate = new System.Windows.Forms.DateTimePicker();
             this.tcAdmin = new System.Windows.Forms.TabControl();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.ptb_exit = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.panel11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_exit)).BeginInit();
             this.tpAccount.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvAccount)).BeginInit();
             this.panel24.SuspendLayout();
             this.panel25.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nmAccountType)).BeginInit();
             this.panel26.SuspendLayout();
             this.panel27.SuspendLayout();
-            this.panel23.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvAccount)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tpOrder.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvOrder)).BeginInit();
             this.panel6.SuspendLayout();
-            this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nmOrderPrice)).BeginInit();
             this.panel9.SuspendLayout();
             this.panel8.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.panel7.SuspendLayout();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvOrder)).BeginInit();
             this.tpBill.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvBill)).BeginInit();
             this.panel22.SuspendLayout();
             this.tcAdmin.SuspendLayout();
-            this.panel11.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptb_exit)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
+            // 
+            // panel11
+            // 
+            this.panel11.Controls.Add(this.ptb_exit);
+            this.panel11.Location = new System.Drawing.Point(1112, 3);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(151, 30);
+            this.panel11.TabIndex = 3;
+            // 
+            // ptb_exit
+            // 
+            this.ptb_exit.Image = global::CyberGameManage.Properties.Resources.x;
+            this.ptb_exit.Location = new System.Drawing.Point(117, 0);
+            this.ptb_exit.Name = "ptb_exit";
+            this.ptb_exit.Size = new System.Drawing.Size(34, 30);
+            this.ptb_exit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptb_exit.TabIndex = 14;
+            this.ptb_exit.TabStop = false;
+            this.ptb_exit.Click += new System.EventHandler(this.ptb_exit_Click);
             // 
             // tpAccount
             // 
             this.tpAccount.BackColor = System.Drawing.Color.Black;
+            this.tpAccount.Controls.Add(this.dtgvAccount);
             this.tpAccount.Controls.Add(this.panel24);
-            this.tpAccount.Controls.Add(this.panel23);
-            this.tpAccount.Controls.Add(this.panel1);
+            this.tpAccount.Controls.Add(this.pictureBox1);
             this.tpAccount.Location = new System.Drawing.Point(4, 27);
             this.tpAccount.Name = "tpAccount";
             this.tpAccount.Padding = new System.Windows.Forms.Padding(3);
-            this.tpAccount.Size = new System.Drawing.Size(689, 462);
+            this.tpAccount.Size = new System.Drawing.Size(1243, 610);
             this.tpAccount.TabIndex = 4;
             this.tpAccount.Text = "Account";
+            // 
+            // dtgvAccount
+            // 
+            this.dtgvAccount.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgvAccount.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvAccount.Location = new System.Drawing.Point(6, 6);
+            this.dtgvAccount.Name = "dtgvAccount";
+            this.dtgvAccount.Size = new System.Drawing.Size(936, 598);
+            this.dtgvAccount.TabIndex = 3;
             // 
             // panel24
             // 
             this.panel24.BackColor = System.Drawing.Color.Black;
-            this.panel24.Controls.Add(this.pictureBox2);
-            this.panel24.Controls.Add(this.pictureBox1);
-            this.panel24.Controls.Add(this.pictureBox3);
             this.panel24.Controls.Add(this.btnResetPassword);
             this.panel24.Controls.Add(this.panel25);
             this.panel24.Controls.Add(this.panel26);
             this.panel24.Controls.Add(this.panel27);
-            this.panel24.Location = new System.Drawing.Point(394, 119);
+            this.panel24.Controls.Add(this.panel1);
+            this.panel24.Location = new System.Drawing.Point(948, 10);
             this.panel24.Name = "panel24";
-            this.panel24.Size = new System.Drawing.Size(289, 337);
+            this.panel24.Size = new System.Drawing.Size(289, 306);
             this.panel24.TabIndex = 2;
             // 
             // btnResetPassword
@@ -156,11 +175,11 @@
             this.btnResetPassword.BackColor = System.Drawing.Color.Crimson;
             this.btnResetPassword.Font = new System.Drawing.Font("Showcard Gothic", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnResetPassword.ForeColor = System.Drawing.Color.White;
-            this.btnResetPassword.Location = new System.Drawing.Point(77, 176);
+            this.btnResetPassword.Location = new System.Drawing.Point(109, 273);
             this.btnResetPassword.Name = "btnResetPassword";
-            this.btnResetPassword.Size = new System.Drawing.Size(138, 41);
+            this.btnResetPassword.Size = new System.Drawing.Size(98, 28);
             this.btnResetPassword.TabIndex = 12;
-            this.btnResetPassword.Text = "Reset Password";
+            this.btnResetPassword.Text = "Reset";
             this.btnResetPassword.UseVisualStyleBackColor = false;
             this.btnResetPassword.Click += new System.EventHandler(this.btnResetPassword_Click);
             // 
@@ -266,23 +285,6 @@
             this.label12.Text = "Account Name:";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // panel23
-            // 
-            this.panel23.Controls.Add(this.dtgvAccount);
-            this.panel23.Location = new System.Drawing.Point(6, 7);
-            this.panel23.Name = "panel23";
-            this.panel23.Size = new System.Drawing.Size(385, 451);
-            this.panel23.TabIndex = 1;
-            // 
-            // dtgvAccount
-            // 
-            this.dtgvAccount.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dtgvAccount.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgvAccount.Location = new System.Drawing.Point(3, 3);
-            this.dtgvAccount.Name = "dtgvAccount";
-            this.dtgvAccount.Size = new System.Drawing.Size(379, 445);
-            this.dtgvAccount.TabIndex = 3;
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Black;
@@ -291,9 +293,9 @@
             this.panel1.Controls.Add(this.btnEditAccount);
             this.panel1.Controls.Add(this.btnDeleteAccount);
             this.panel1.Controls.Add(this.btnAddAccount);
-            this.panel1.Location = new System.Drawing.Point(394, 9);
+            this.panel1.Location = new System.Drawing.Point(9, 163);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(289, 104);
+            this.panel1.Size = new System.Drawing.Size(277, 104);
             this.panel1.TabIndex = 0;
             // 
             // btnShowAccount
@@ -326,7 +328,7 @@
             this.btnDeleteAccount.BackColor = System.Drawing.Color.OrangeRed;
             this.btnDeleteAccount.Font = new System.Drawing.Font("Showcard Gothic", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDeleteAccount.ForeColor = System.Drawing.Color.White;
-            this.btnDeleteAccount.Location = new System.Drawing.Point(177, 16);
+            this.btnDeleteAccount.Location = new System.Drawing.Point(177, 11);
             this.btnDeleteAccount.Name = "btnDeleteAccount";
             this.btnDeleteAccount.Size = new System.Drawing.Size(75, 34);
             this.btnDeleteAccount.TabIndex = 9;
@@ -340,7 +342,7 @@
             this.btnAddAccount.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnAddAccount.Font = new System.Drawing.Font("Showcard Gothic", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddAccount.ForeColor = System.Drawing.Color.White;
-            this.btnAddAccount.Location = new System.Drawing.Point(35, 16);
+            this.btnAddAccount.Location = new System.Drawing.Point(35, 10);
             this.btnAddAccount.Name = "btnAddAccount";
             this.btnAddAccount.Size = new System.Drawing.Size(75, 34);
             this.btnAddAccount.TabIndex = 8;
@@ -348,27 +350,56 @@
             this.btnAddAccount.UseVisualStyleBackColor = false;
             this.btnAddAccount.Click += new System.EventHandler(this.btnAddAccount_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::CyberGameManage.Properties.Resources.Frenkie_de_Jong___FootyRenders1;
+            this.pictureBox1.Location = new System.Drawing.Point(1022, 322);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(167, 292);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 14;
+            this.pictureBox1.TabStop = false;
+            // 
             // tpOrder
             // 
             this.tpOrder.BackColor = System.Drawing.Color.Black;
+            this.tpOrder.Controls.Add(this.pictureBox4);
+            this.tpOrder.Controls.Add(this.dtgvOrder);
             this.tpOrder.Controls.Add(this.panel6);
-            this.tpOrder.Controls.Add(this.panel5);
             this.tpOrder.Controls.Add(this.panel4);
-            this.tpOrder.Controls.Add(this.panel3);
             this.tpOrder.Location = new System.Drawing.Point(4, 27);
             this.tpOrder.Name = "tpOrder";
             this.tpOrder.Padding = new System.Windows.Forms.Padding(3);
-            this.tpOrder.Size = new System.Drawing.Size(689, 462);
+            this.tpOrder.Size = new System.Drawing.Size(1243, 610);
             this.tpOrder.TabIndex = 1;
             this.tpOrder.Text = "Order";
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::CyberGameManage.Properties.Resources.Daco_46505691;
+            this.pictureBox4.Location = new System.Drawing.Point(952, 453);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(285, 151);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 3;
+            this.pictureBox4.TabStop = false;
+            // 
+            // dtgvOrder
+            // 
+            this.dtgvOrder.AllowUserToOrderColumns = true;
+            this.dtgvOrder.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgvOrder.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvOrder.Location = new System.Drawing.Point(6, 10);
+            this.dtgvOrder.Name = "dtgvOrder";
+            this.dtgvOrder.Size = new System.Drawing.Size(940, 594);
+            this.dtgvOrder.TabIndex = 0;
             // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.Black;
-            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel6.Controls.Add(this.txbSearchOrderName);
             this.panel6.Controls.Add(this.btnSearchOrder);
-            this.panel6.Location = new System.Drawing.Point(400, 7);
+            this.panel6.Location = new System.Drawing.Point(952, 10);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(285, 51);
             this.panel6.TabIndex = 2;
@@ -394,6 +425,126 @@
             this.btnSearchOrder.UseVisualStyleBackColor = false;
             this.btnSearchOrder.Click += new System.EventHandler(this.btnSearchOrder_Click);
             // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.Black;
+            this.panel4.Controls.Add(this.panel10);
+            this.panel4.Controls.Add(this.panel9);
+            this.panel4.Controls.Add(this.panel8);
+            this.panel4.Controls.Add(this.panel5);
+            this.panel4.Controls.Add(this.panel7);
+            this.panel4.Location = new System.Drawing.Point(952, 67);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(285, 380);
+            this.panel4.TabIndex = 1;
+            // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.Color.Black;
+            this.panel10.Controls.Add(this.nmOrderPrice);
+            this.panel10.Controls.Add(this.label4);
+            this.panel10.Location = new System.Drawing.Point(8, 189);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(272, 49);
+            this.panel10.TabIndex = 4;
+            // 
+            // nmOrderPrice
+            // 
+            this.nmOrderPrice.BackColor = System.Drawing.Color.White;
+            this.nmOrderPrice.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nmOrderPrice.ForeColor = System.Drawing.Color.Black;
+            this.nmOrderPrice.Location = new System.Drawing.Point(90, 12);
+            this.nmOrderPrice.Maximum = new decimal(new int[] {
+            100000000,
+            0,
+            0,
+            0});
+            this.nmOrderPrice.Name = "nmOrderPrice";
+            this.nmOrderPrice.Size = new System.Drawing.Size(173, 25);
+            this.nmOrderPrice.TabIndex = 1;
+            this.nmOrderPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label4
+            // 
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label4.Font = new System.Drawing.Font("Showcard Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(3, 14);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(80, 23);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Price:";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.Black;
+            this.panel9.Controls.Add(this.cbOrderCategory);
+            this.panel9.Controls.Add(this.label3);
+            this.panel9.Location = new System.Drawing.Point(8, 130);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(272, 49);
+            this.panel9.TabIndex = 4;
+            // 
+            // cbOrderCategory
+            // 
+            this.cbOrderCategory.BackColor = System.Drawing.Color.White;
+            this.cbOrderCategory.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbOrderCategory.FormattingEnabled = true;
+            this.cbOrderCategory.Location = new System.Drawing.Point(89, 10);
+            this.cbOrderCategory.Name = "cbOrderCategory";
+            this.cbOrderCategory.Size = new System.Drawing.Size(174, 26);
+            this.cbOrderCategory.TabIndex = 1;
+            // 
+            // label3
+            // 
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label3.Font = new System.Drawing.Font("Showcard Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(3, 13);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(80, 23);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Menu:";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.Black;
+            this.panel8.Controls.Add(this.txbOrderName);
+            this.panel8.Controls.Add(this.label2);
+            this.panel8.ForeColor = System.Drawing.Color.White;
+            this.panel8.Location = new System.Drawing.Point(8, 69);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(272, 49);
+            this.panel8.TabIndex = 3;
+            // 
+            // txbOrderName
+            // 
+            this.txbOrderName.BackColor = System.Drawing.Color.White;
+            this.txbOrderName.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbOrderName.ForeColor = System.Drawing.Color.Black;
+            this.txbOrderName.Location = new System.Drawing.Point(90, 9);
+            this.txbOrderName.Name = "txbOrderName";
+            this.txbOrderName.Size = new System.Drawing.Size(175, 25);
+            this.txbOrderName.TabIndex = 1;
+            this.txbOrderName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label2.Font = new System.Drawing.Font("Showcard Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(3, 13);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(80, 23);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Order:";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.Black;
@@ -402,7 +553,7 @@
             this.panel5.Controls.Add(this.btnEditOrder);
             this.panel5.Controls.Add(this.btnDeleteOrder);
             this.panel5.Controls.Add(this.btnAddOrder);
-            this.panel5.Location = new System.Drawing.Point(400, 337);
+            this.panel5.Location = new System.Drawing.Point(0, 244);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(285, 119);
             this.panel5.TabIndex = 1;
@@ -459,132 +610,12 @@
             this.btnAddOrder.UseVisualStyleBackColor = false;
             this.btnAddOrder.Click += new System.EventHandler(this.btnAddOrder_Click);
             // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.Black;
-            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel4.Controls.Add(this.panel10);
-            this.panel4.Controls.Add(this.panel9);
-            this.panel4.Controls.Add(this.panel8);
-            this.panel4.Controls.Add(this.panel7);
-            this.panel4.Location = new System.Drawing.Point(400, 63);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(285, 268);
-            this.panel4.TabIndex = 1;
-            // 
-            // panel10
-            // 
-            this.panel10.BackColor = System.Drawing.Color.Black;
-            this.panel10.Controls.Add(this.nmOrderPrice);
-            this.panel10.Controls.Add(this.label4);
-            this.panel10.Location = new System.Drawing.Point(8, 189);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(272, 49);
-            this.panel10.TabIndex = 4;
-            // 
-            // nmOrderPrice
-            // 
-            this.nmOrderPrice.BackColor = System.Drawing.Color.White;
-            this.nmOrderPrice.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nmOrderPrice.ForeColor = System.Drawing.Color.Black;
-            this.nmOrderPrice.Location = new System.Drawing.Point(90, 12);
-            this.nmOrderPrice.Maximum = new decimal(new int[] {
-            100000000,
-            0,
-            0,
-            0});
-            this.nmOrderPrice.Name = "nmOrderPrice";
-            this.nmOrderPrice.Size = new System.Drawing.Size(173, 25);
-            this.nmOrderPrice.TabIndex = 1;
-            this.nmOrderPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label4
-            // 
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label4.Font = new System.Drawing.Font("Showcard Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(3, 14);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(80, 23);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Price:";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panel9
-            // 
-            this.panel9.BackColor = System.Drawing.Color.Black;
-            this.panel9.Controls.Add(this.cbOrderCategory);
-            this.panel9.Controls.Add(this.label3);
-            this.panel9.Location = new System.Drawing.Point(8, 134);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(272, 49);
-            this.panel9.TabIndex = 4;
-            // 
-            // cbOrderCategory
-            // 
-            this.cbOrderCategory.BackColor = System.Drawing.Color.White;
-            this.cbOrderCategory.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbOrderCategory.FormattingEnabled = true;
-            this.cbOrderCategory.Location = new System.Drawing.Point(89, 10);
-            this.cbOrderCategory.Name = "cbOrderCategory";
-            this.cbOrderCategory.Size = new System.Drawing.Size(174, 26);
-            this.cbOrderCategory.TabIndex = 1;
-            // 
-            // label3
-            // 
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label3.Font = new System.Drawing.Font("Showcard Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(3, 13);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(80, 23);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Menu:";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.Color.Black;
-            this.panel8.Controls.Add(this.txbOrderName);
-            this.panel8.Controls.Add(this.label2);
-            this.panel8.ForeColor = System.Drawing.Color.White;
-            this.panel8.Location = new System.Drawing.Point(8, 79);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(272, 49);
-            this.panel8.TabIndex = 3;
-            // 
-            // txbOrderName
-            // 
-            this.txbOrderName.BackColor = System.Drawing.Color.White;
-            this.txbOrderName.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbOrderName.ForeColor = System.Drawing.Color.Black;
-            this.txbOrderName.Location = new System.Drawing.Point(90, 9);
-            this.txbOrderName.Name = "txbOrderName";
-            this.txbOrderName.Size = new System.Drawing.Size(175, 25);
-            this.txbOrderName.TabIndex = 1;
-            this.txbOrderName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label2
-            // 
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label2.Font = new System.Drawing.Font("Showcard Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(3, 13);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(80, 23);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Order:";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.Black;
             this.panel7.Controls.Add(this.txbOrderID);
             this.panel7.Controls.Add(this.label1);
-            this.panel7.Location = new System.Drawing.Point(7, 30);
+            this.panel7.Location = new System.Drawing.Point(7, 12);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(272, 43);
             this.panel7.TabIndex = 2;
@@ -615,23 +646,6 @@
             this.label1.Text = "ID:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.dtgvOrder);
-            this.panel3.Location = new System.Drawing.Point(6, 7);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(388, 456);
-            this.panel3.TabIndex = 0;
-            // 
-            // dtgvOrder
-            // 
-            this.dtgvOrder.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dtgvOrder.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgvOrder.Location = new System.Drawing.Point(3, 3);
-            this.dtgvOrder.Name = "dtgvOrder";
-            this.dtgvOrder.Size = new System.Drawing.Size(382, 450);
-            this.dtgvOrder.TabIndex = 0;
-            // 
             // tpBill
             // 
             this.tpBill.BackColor = System.Drawing.Color.Black;
@@ -641,7 +655,7 @@
             this.tpBill.Location = new System.Drawing.Point(4, 27);
             this.tpBill.Name = "tpBill";
             this.tpBill.Padding = new System.Windows.Forms.Padding(3);
-            this.tpBill.Size = new System.Drawing.Size(689, 462);
+            this.tpBill.Size = new System.Drawing.Size(1243, 610);
             this.tpBill.TabIndex = 0;
             this.tpBill.Text = "Turnover";
             // 
@@ -655,12 +669,12 @@
             this.panel2.Controls.Add(this.dtgvBill);
             this.panel2.Location = new System.Drawing.Point(3, 53);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(677, 404);
+            this.panel2.Size = new System.Drawing.Size(1234, 551);
             this.panel2.TabIndex = 1;
             // 
             // txbPageBill
             // 
-            this.txbPageBill.Location = new System.Drawing.Point(326, 364);
+            this.txbPageBill.Location = new System.Drawing.Point(642, 520);
             this.txbPageBill.Name = "txbPageBill";
             this.txbPageBill.Size = new System.Drawing.Size(34, 25);
             this.txbPageBill.TabIndex = 10;
@@ -673,7 +687,7 @@
             this.btnLastBillPage.BackColor = System.Drawing.Color.CadetBlue;
             this.btnLastBillPage.Font = new System.Drawing.Font("Showcard Gothic", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLastBillPage.ForeColor = System.Drawing.Color.White;
-            this.btnLastBillPage.Location = new System.Drawing.Point(474, 358);
+            this.btnLastBillPage.Location = new System.Drawing.Point(790, 514);
             this.btnLastBillPage.Name = "btnLastBillPage";
             this.btnLastBillPage.Size = new System.Drawing.Size(71, 34);
             this.btnLastBillPage.TabIndex = 9;
@@ -686,7 +700,7 @@
             this.btnNextBillPage.BackColor = System.Drawing.Color.CadetBlue;
             this.btnNextBillPage.Font = new System.Drawing.Font("Showcard Gothic", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNextBillPage.ForeColor = System.Drawing.Color.White;
-            this.btnNextBillPage.Location = new System.Drawing.Point(389, 358);
+            this.btnNextBillPage.Location = new System.Drawing.Point(705, 514);
             this.btnNextBillPage.Name = "btnNextBillPage";
             this.btnNextBillPage.Size = new System.Drawing.Size(79, 34);
             this.btnNextBillPage.TabIndex = 8;
@@ -699,7 +713,7 @@
             this.btnPrevioursBillPage.BackColor = System.Drawing.Color.CadetBlue;
             this.btnPrevioursBillPage.Font = new System.Drawing.Font("Showcard Gothic", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPrevioursBillPage.ForeColor = System.Drawing.Color.White;
-            this.btnPrevioursBillPage.Location = new System.Drawing.Point(203, 358);
+            this.btnPrevioursBillPage.Location = new System.Drawing.Point(519, 514);
             this.btnPrevioursBillPage.Name = "btnPrevioursBillPage";
             this.btnPrevioursBillPage.Size = new System.Drawing.Size(94, 34);
             this.btnPrevioursBillPage.TabIndex = 7;
@@ -712,7 +726,7 @@
             this.btnFirstBillPage.BackColor = System.Drawing.Color.CadetBlue;
             this.btnFirstBillPage.Font = new System.Drawing.Font("Showcard Gothic", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFirstBillPage.ForeColor = System.Drawing.Color.White;
-            this.btnFirstBillPage.Location = new System.Drawing.Point(132, 358);
+            this.btnFirstBillPage.Location = new System.Drawing.Point(448, 514);
             this.btnFirstBillPage.Name = "btnFirstBillPage";
             this.btnFirstBillPage.Size = new System.Drawing.Size(65, 34);
             this.btnFirstBillPage.TabIndex = 6;
@@ -722,23 +736,23 @@
             // 
             // dtgvBill
             // 
+            this.dtgvBill.AllowUserToOrderColumns = true;
             this.dtgvBill.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgvBill.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dtgvBill.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgvBill.Location = new System.Drawing.Point(6, 3);
+            this.dtgvBill.Location = new System.Drawing.Point(3, 3);
             this.dtgvBill.Name = "dtgvBill";
-            this.dtgvBill.Size = new System.Drawing.Size(668, 349);
+            this.dtgvBill.Size = new System.Drawing.Size(1231, 505);
             this.dtgvBill.TabIndex = 1;
             // 
             // panel22
             // 
-            this.panel22.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel22.Controls.Add(this.btnViewbill);
             this.panel22.Controls.Add(this.dtpkToDate);
             this.panel22.Controls.Add(this.dtpkFromDate);
             this.panel22.Location = new System.Drawing.Point(6, 7);
             this.panel22.Name = "panel22";
-            this.panel22.Size = new System.Drawing.Size(677, 40);
+            this.panel22.Size = new System.Drawing.Size(1231, 40);
             this.panel22.TabIndex = 0;
             // 
             // btnViewbill
@@ -746,7 +760,7 @@
             this.btnViewbill.BackColor = System.Drawing.Color.Crimson;
             this.btnViewbill.Font = new System.Drawing.Font("Showcard Gothic", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnViewbill.ForeColor = System.Drawing.Color.White;
-            this.btnViewbill.Location = new System.Drawing.Point(283, 1);
+            this.btnViewbill.Location = new System.Drawing.Point(591, -3);
             this.btnViewbill.Name = "btnViewbill";
             this.btnViewbill.Size = new System.Drawing.Size(118, 34);
             this.btnViewbill.TabIndex = 5;
@@ -756,7 +770,7 @@
             // dtpkToDate
             // 
             this.dtpkToDate.CalendarFont = new System.Drawing.Font("Palatino Linotype", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpkToDate.Location = new System.Drawing.Point(424, 8);
+            this.dtpkToDate.Location = new System.Drawing.Point(745, 1);
             this.dtpkToDate.Name = "dtpkToDate";
             this.dtpkToDate.Size = new System.Drawing.Size(223, 25);
             this.dtpkToDate.TabIndex = 4;
@@ -768,7 +782,7 @@
             this.dtpkFromDate.CalendarMonthBackground = System.Drawing.Color.Black;
             this.dtpkFromDate.CalendarTrailingForeColor = System.Drawing.SystemColors.Desktop;
             this.dtpkFromDate.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpkFromDate.Location = new System.Drawing.Point(38, 8);
+            this.dtpkFromDate.Location = new System.Drawing.Point(326, 1);
             this.dtpkFromDate.Name = "dtpkFromDate";
             this.dtpkFromDate.Size = new System.Drawing.Size(226, 25);
             this.dtpkFromDate.TabIndex = 3;
@@ -782,64 +796,15 @@
             this.tcAdmin.Location = new System.Drawing.Point(12, 12);
             this.tcAdmin.Name = "tcAdmin";
             this.tcAdmin.SelectedIndex = 0;
-            this.tcAdmin.Size = new System.Drawing.Size(697, 493);
+            this.tcAdmin.Size = new System.Drawing.Size(1251, 641);
             this.tcAdmin.TabIndex = 0;
-            // 
-            // panel11
-            // 
-            this.panel11.Controls.Add(this.ptb_exit);
-            this.panel11.Location = new System.Drawing.Point(558, 3);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(151, 30);
-            this.panel11.TabIndex = 3;
-            // 
-            // ptb_exit
-            // 
-            this.ptb_exit.Image = global::CyberGameManage.Properties.Resources.x;
-            this.ptb_exit.Location = new System.Drawing.Point(117, 0);
-            this.ptb_exit.Name = "ptb_exit";
-            this.ptb_exit.Size = new System.Drawing.Size(34, 30);
-            this.ptb_exit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ptb_exit.TabIndex = 14;
-            this.ptb_exit.TabStop = false;
-            this.ptb_exit.Click += new System.EventHandler(this.ptb_exit_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::CyberGameManage.Properties.Resources._147235_;
-            this.pictureBox2.Location = new System.Drawing.Point(196, 237);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(90, 97);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 15;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::CyberGameManage.Properties.Resources._108662_;
-            this.pictureBox1.Location = new System.Drawing.Point(91, 237);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(105, 97);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 14;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::CyberGameManage.Properties.Resources._133157_;
-            this.pictureBox3.Location = new System.Drawing.Point(3, 237);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(90, 97);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 13;
-            this.pictureBox3.TabStop = false;
             // 
             // fAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(713, 517);
+            this.ClientSize = new System.Drawing.Size(1275, 665);
             this.Controls.Add(this.panel11);
             this.Controls.Add(this.tcAdmin);
             this.ForeColor = System.Drawing.Color.Black;
@@ -847,7 +812,10 @@
             this.Name = "fAdmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Admin";
+            this.panel11.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_exit)).EndInit();
             this.tpAccount.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvAccount)).EndInit();
             this.panel24.ResumeLayout(false);
             this.panel25.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.nmAccountType)).EndInit();
@@ -855,43 +823,38 @@
             this.panel26.PerformLayout();
             this.panel27.ResumeLayout(false);
             this.panel27.PerformLayout();
-            this.panel23.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvAccount)).EndInit();
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tpOrder.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvOrder)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
-            this.panel5.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel10.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.nmOrderPrice)).EndInit();
             this.panel9.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
+            this.panel5.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvOrder)).EndInit();
             this.tpBill.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvBill)).EndInit();
             this.panel22.ResumeLayout(false);
             this.tcAdmin.ResumeLayout(false);
-            this.panel11.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.ptb_exit)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.DirectoryServices.DirectoryEntry directoryEntry1;
+        private System.Windows.Forms.Panel panel11;
+        private System.Windows.Forms.PictureBox ptb_exit;
         private System.Windows.Forms.TabPage tpAccount;
         private System.Windows.Forms.Panel panel24;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnResetPassword;
         private System.Windows.Forms.Panel panel25;
         private System.Windows.Forms.NumericUpDown nmAccountType;
@@ -902,7 +865,6 @@
         private System.Windows.Forms.Panel panel27;
         private System.Windows.Forms.TextBox txbUserName;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Panel panel23;
         private System.Windows.Forms.DataGridView dtgvAccount;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnShowAccount;
@@ -931,7 +893,6 @@
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.TextBox txbOrderID;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.DataGridView dtgvOrder;
         private System.Windows.Forms.TabPage tpBill;
         private System.Windows.Forms.Panel panel2;
@@ -946,9 +907,6 @@
         private System.Windows.Forms.DateTimePicker dtpkToDate;
         private System.Windows.Forms.DateTimePicker dtpkFromDate;
         private System.Windows.Forms.TabControl tcAdmin;
-        private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.PictureBox ptb_exit;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox4;
     }
 }

@@ -3,15 +3,9 @@ using CyberGameManage.DTO;
 using CyberGameManage.Payment;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.Globalization;
-using System.Linq;
 using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CyberGameManage
@@ -69,7 +63,7 @@ namespace CyberGameManage
             cbOrderr.DataSource = listOrderr;
             cbOrderr.DisplayMember = "Name";
         }
-        
+
         void LoadComputer()
         {
             flpTable.Controls.Clear();
@@ -93,7 +87,7 @@ namespace CyberGameManage
                         btn.BackColor = Color.OrangeRed;
                         break;
                 }
-                flpTable.Controls.Add(btn); 
+                flpTable.Controls.Add(btn);
             }
 
         }
@@ -119,7 +113,7 @@ namespace CyberGameManage
             cb.DataSource = ComputerDAO.Instance.LoadComputerList();
             cb.DisplayMember = "Name";
         }
-       
+
         #region Events
         void btn_Click(object sender, EventArgs e)
         {
@@ -130,6 +124,10 @@ namespace CyberGameManage
         private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
+            //fLogin f = new fLogin();
+            //f.ShowDialog();
+
+
         }
 
         private void userInformationToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -233,7 +231,7 @@ namespace CyberGameManage
             double finalTotalPrice = totalPrice - (totalPrice / 100) * discount;
             if (idBill != -1)
             {
-                if (MyMessageBox.ShowMessage(string.Format("Your bill for the {0}:\n\nFinal Price = Total Price - (Total Price / 100) x Discount \n\n\t= {1} - ({1} / 100) x {2} \n\n\t= {3} VND \n\n\t Cashier: Nguyen Thanh Thien \t\t| Mobile: 0977214077", computer.Name, totalPrice, discount, finalTotalPrice ), "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.None) == System.Windows.Forms.DialogResult.OK)
+                if (MyMessageBox.ShowMessage(string.Format("Your bill for the {0}:\n\nFinal Price = Total Price - (Total Price / 100) x Discount \n\n\t= {1} - ({1} / 100) x {2} \n\n\t= {3} VND \n\n\t Cashier: Nguyen Thanh Thien \t\t| Mobile: 0977214077", computer.Name, totalPrice, discount, finalTotalPrice), "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.None) == System.Windows.Forms.DialogResult.OK)
                 {
                     BillDAO.Instance.CheckOut(idBill, discount, (float)finalTotalPrice);
                     ShowBill(computer.ID);
@@ -262,7 +260,9 @@ namespace CyberGameManage
                 {
                     BillDAO.Instance.CheckOut(idBill, discount, (float)finalTotalPrice);
                     ShowBill(computer.ID);
+
                     Facade.getInstance().buyProductByCash("Nguyen Thanh Thien");
+
                     //Facade.getInstance().buyProductByPaypalWithStandardShipping("19110150@student.hcmute.edu.vn", "0977214077");
                     LoadComputer();
                 }
@@ -286,8 +286,11 @@ namespace CyberGameManage
                 {
                     BillDAO.Instance.CheckOut(idBill, discount, (float)finalTotalPrice);
                     ShowBill(computer.ID);
+
                     Facade.getInstance().buyProductByMomo("19110150@student.hcmute.edu.vn", "0977214077");
+
                     LoadComputer();
+
                 }
             }
 
@@ -329,8 +332,15 @@ namespace CyberGameManage
 
         private void ptb_Exit_Click(object sender, EventArgs e)
         {
-            Application.Exit();   
+            this.Close();
         }
         #endregion
+
+        private void btnDiscount_Click(object sender, EventArgs e)
+        {
+            fSpinning f = new fSpinning();
+            f.ShowDialog();
+            this.Show();
+        }
     }
 }

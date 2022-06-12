@@ -45,7 +45,6 @@
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btn_Momo = new System.Windows.Forms.Button();
             this.btn_cash = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
@@ -71,11 +70,11 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.menuStrip1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nmDiscount)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nmOrderCount)).BeginInit();
@@ -92,21 +91,21 @@
             // menuStrip1
             // 
             this.menuStrip1.BackColor = System.Drawing.Color.White;
-            this.menuStrip1.Font = new System.Drawing.Font("Showcard Gothic", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menuStrip1.Font = new System.Drawing.Font("Unispace", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.adminToolStripMenuItem,
             this.accountInformationToolStripMenuItem,
             this.moreFunctionToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1275, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1275, 27);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // adminToolStripMenuItem
             // 
             this.adminToolStripMenuItem.Name = "adminToolStripMenuItem";
-            this.adminToolStripMenuItem.Size = new System.Drawing.Size(75, 24);
+            this.adminToolStripMenuItem.Size = new System.Drawing.Size(71, 23);
             this.adminToolStripMenuItem.Text = "Admin";
             this.adminToolStripMenuItem.Click += new System.EventHandler(this.adminToolStripMenuItem_Click);
             // 
@@ -116,20 +115,20 @@
             this.userInformationToolStripMenuItem1,
             this.logoutToolStripMenuItem});
             this.accountInformationToolStripMenuItem.Name = "accountInformationToolStripMenuItem";
-            this.accountInformationToolStripMenuItem.Size = new System.Drawing.Size(95, 24);
+            this.accountInformationToolStripMenuItem.Size = new System.Drawing.Size(91, 23);
             this.accountInformationToolStripMenuItem.Text = "Account";
             // 
             // userInformationToolStripMenuItem1
             // 
             this.userInformationToolStripMenuItem1.Name = "userInformationToolStripMenuItem1";
-            this.userInformationToolStripMenuItem1.Size = new System.Drawing.Size(234, 24);
+            this.userInformationToolStripMenuItem1.Size = new System.Drawing.Size(238, 24);
             this.userInformationToolStripMenuItem1.Text = "User Information";
             this.userInformationToolStripMenuItem1.Click += new System.EventHandler(this.userInformationToolStripMenuItem1_Click);
             // 
             // logoutToolStripMenuItem
             // 
             this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
-            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(234, 24);
+            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(238, 24);
             this.logoutToolStripMenuItem.Text = "Logout";
             this.logoutToolStripMenuItem.Click += new System.EventHandler(this.logoutToolStripMenuItem_Click);
             // 
@@ -139,14 +138,14 @@
             this.paymentToolStripMenuItem,
             this.orderToolStripMenuItem});
             this.moreFunctionToolStripMenuItem.Name = "moreFunctionToolStripMenuItem";
-            this.moreFunctionToolStripMenuItem.Size = new System.Drawing.Size(151, 24);
+            this.moreFunctionToolStripMenuItem.Size = new System.Drawing.Size(151, 23);
             this.moreFunctionToolStripMenuItem.Text = "More Function";
             // 
             // paymentToolStripMenuItem
             // 
             this.paymentToolStripMenuItem.Name = "paymentToolStripMenuItem";
             this.paymentToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
-            this.paymentToolStripMenuItem.Size = new System.Drawing.Size(224, 24);
+            this.paymentToolStripMenuItem.Size = new System.Drawing.Size(217, 24);
             this.paymentToolStripMenuItem.Text = "Payment";
             this.paymentToolStripMenuItem.Click += new System.EventHandler(this.paymentToolStripMenuItem_Click);
             // 
@@ -154,7 +153,7 @@
             // 
             this.orderToolStripMenuItem.Name = "orderToolStripMenuItem";
             this.orderToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.orderToolStripMenuItem.Size = new System.Drawing.Size(224, 24);
+            this.orderToolStripMenuItem.Size = new System.Drawing.Size(217, 24);
             this.orderToolStripMenuItem.Text = "Order";
             this.orderToolStripMenuItem.Click += new System.EventHandler(this.orderToolStripMenuItem_Click);
             // 
@@ -207,7 +206,6 @@
             // panel3
             // 
             this.panel3.Controls.Add(this.pictureBox3);
-            this.panel3.Controls.Add(this.pictureBox2);
             this.panel3.Controls.Add(this.btn_Momo);
             this.panel3.Controls.Add(this.btn_cash);
             this.panel3.Controls.Add(this.label2);
@@ -226,22 +224,12 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::CyberGameManage.Properties.Resources.MoMo;
-            this.pictureBox3.Location = new System.Drawing.Point(337, 115);
+            this.pictureBox3.Location = new System.Drawing.Point(321, 75);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(50, 31);
+            this.pictureBox3.Size = new System.Drawing.Size(66, 71);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 13;
             this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::CyberGameManage.Properties.Resources.Cash;
-            this.pictureBox2.Location = new System.Drawing.Point(336, 75);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(50, 31);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 12;
-            this.pictureBox2.TabStop = false;
             // 
             // btn_Momo
             // 
@@ -250,7 +238,7 @@
             this.btn_Momo.ForeColor = System.Drawing.Color.White;
             this.btn_Momo.Location = new System.Drawing.Point(85, 113);
             this.btn_Momo.Name = "btn_Momo";
-            this.btn_Momo.Size = new System.Drawing.Size(245, 33);
+            this.btn_Momo.Size = new System.Drawing.Size(236, 33);
             this.btn_Momo.TabIndex = 11;
             this.btn_Momo.Text = "Payment By MoMo";
             this.btn_Momo.UseVisualStyleBackColor = false;
@@ -263,7 +251,7 @@
             this.btn_cash.ForeColor = System.Drawing.Color.White;
             this.btn_cash.Location = new System.Drawing.Point(85, 75);
             this.btn_cash.Name = "btn_cash";
-            this.btn_cash.Size = new System.Drawing.Size(245, 32);
+            this.btn_cash.Size = new System.Drawing.Size(236, 32);
             this.btn_cash.TabIndex = 10;
             this.btn_cash.Text = "Payment By Cash";
             this.btn_cash.UseVisualStyleBackColor = false;
@@ -338,7 +326,7 @@
             this.nmDiscount.Font = new System.Drawing.Font("Showcard Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nmDiscount.ForeColor = System.Drawing.Color.White;
             this.nmDiscount.Increment = new decimal(new int[] {
-            5,
+            10,
             0,
             0,
             0});
@@ -347,11 +335,6 @@
             this.nmDiscount.Size = new System.Drawing.Size(45, 24);
             this.nmDiscount.TabIndex = 4;
             this.nmDiscount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.nmDiscount.Value = new decimal(new int[] {
-            10,
-            0,
-            0,
-            0});
             // 
             // btnDiscount
             // 
@@ -364,6 +347,7 @@
             this.btnDiscount.TabIndex = 5;
             this.btnDiscount.Text = "Discount";
             this.btnDiscount.UseVisualStyleBackColor = false;
+            this.btnDiscount.Click += new System.EventHandler(this.btnDiscount_Click);
             // 
             // btnCheckout
             // 
@@ -481,7 +465,7 @@
             // ptb_Exit
             // 
             this.ptb_Exit.Image = global::CyberGameManage.Properties.Resources.x;
-            this.ptb_Exit.Location = new System.Drawing.Point(122, -1);
+            this.ptb_Exit.Location = new System.Drawing.Point(123, -1);
             this.ptb_Exit.Name = "ptb_Exit";
             this.ptb_Exit.Size = new System.Drawing.Size(43, 28);
             this.ptb_Exit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -504,9 +488,9 @@
             // 
             this.pictureBox7.BackColor = System.Drawing.Color.Black;
             this.pictureBox7.Image = global::CyberGameManage.Properties.Resources._2;
-            this.pictureBox7.Location = new System.Drawing.Point(12, 31);
+            this.pictureBox7.Location = new System.Drawing.Point(607, 30);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(85, 60);
+            this.pictureBox7.Size = new System.Drawing.Size(98, 61);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox7.TabIndex = 16;
             this.pictureBox7.TabStop = false;
@@ -526,9 +510,9 @@
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.Black;
             this.pictureBox4.Image = global::CyberGameManage.Properties.Resources._1;
-            this.pictureBox4.Location = new System.Drawing.Point(698, 31);
+            this.pictureBox4.Location = new System.Drawing.Point(711, 31);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(70, 60);
+            this.pictureBox4.Size = new System.Drawing.Size(57, 60);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 14;
             this.pictureBox4.TabStop = false;
@@ -536,7 +520,7 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = global::CyberGameManage.Properties.Resources.Daco_4650569;
-            this.pictureBox5.Location = new System.Drawing.Point(607, 31);
+            this.pictureBox5.Location = new System.Drawing.Point(15, 30);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(85, 60);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -554,14 +538,22 @@
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
+            // reportViewer1
+            // 
+            this.reportViewer1.Location = new System.Drawing.Point(0, 0);
+            this.reportViewer1.Name = "ReportViewer";
+            this.reportViewer1.ServerReport.BearerToken = null;
+            this.reportViewer1.Size = new System.Drawing.Size(396, 246);
+            this.reportViewer1.TabIndex = 0;
+            // 
             // fComputerManager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(1275, 665);
-            this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.pictureBox7);
+            this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.panel11);
@@ -577,14 +569,13 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "fComputerManager";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Cyber Game Manager";
+            this.Text = " ";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nmDiscount)).EndInit();
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.nmOrderCount)).EndInit();
@@ -639,10 +630,10 @@
         private System.Windows.Forms.Button btn_Momo;
         private System.Windows.Forms.PictureBox ptb_Exit;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox8;
+        private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
     }
 }

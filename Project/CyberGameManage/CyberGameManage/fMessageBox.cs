@@ -163,10 +163,5 @@ namespace CyberGameManage
         {
             pRate(new IFeedBack());
         }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
     }
 }

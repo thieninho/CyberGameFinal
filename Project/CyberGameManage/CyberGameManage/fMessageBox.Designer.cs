@@ -248,9 +248,9 @@
             // ptb_exit
             // 
             this.ptb_exit.Image = global::CyberGameManage.Properties.Resources.x;
-            this.ptb_exit.Location = new System.Drawing.Point(1067, 1);
+            this.ptb_exit.Location = new System.Drawing.Point(1079, 1);
             this.ptb_exit.Name = "ptb_exit";
-            this.ptb_exit.Size = new System.Drawing.Size(40, 41);
+            this.ptb_exit.Size = new System.Drawing.Size(32, 35);
             this.ptb_exit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ptb_exit.TabIndex = 4;
             this.ptb_exit.TabStop = false;
@@ -288,7 +288,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1049, 66);
             this.panel2.TabIndex = 29;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // lbFeddback
             // 

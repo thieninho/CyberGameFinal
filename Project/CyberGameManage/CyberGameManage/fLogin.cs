@@ -42,7 +42,7 @@ namespace CyberGameManage
                 fComputerManager f = new fComputerManager(loginAccount);
                 this.Hide();
                 f.ShowDialog();
-                //this.Show();
+                this.Show();
             }
             else 
                 MessageBox.Show("Login Fail!");
@@ -61,7 +61,7 @@ namespace CyberGameManage
 
         private void ptb_exit_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Close();
         }
 
     }
