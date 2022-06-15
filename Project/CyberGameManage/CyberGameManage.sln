@@ -5,7 +5,7 @@ VisualStudioVersion = 17.1.32328.378
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CyberGameManage", "CyberGameManage\CyberGameManage.csproj", "{8957CEE2-CA7C-419E-A7E8-53618396A8BD}"
 EndProject
-Project("{840C416C-B8F3-42BC-B0DD-F6BB14C9F8CB}") = "CyberGameSetting", "CyberGameSetting\CyberGameSetting.aiproj", "{3F139999-C20A-4536-A659-17AC26418777}"
+Project("{840C416C-B8F3-42BC-B0DD-F6BB14C9F8CB}") = "CyberGameSetup", "CyberGameSetup\CyberGameSetup.aiproj", "{12A4B61E-6862-48D5-BE4C-9B033F13CB25}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,12 +20,12 @@ Global
 		{8957CEE2-CA7C-419E-A7E8-53618396A8BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8957CEE2-CA7C-419E-A7E8-53618396A8BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8957CEE2-CA7C-419E-A7E8-53618396A8BD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3F139999-C20A-4536-A659-17AC26418777}.All|Any CPU.ActiveCfg = DefaultBuild
-		{3F139999-C20A-4536-A659-17AC26418777}.All|Any CPU.Build.0 = DefaultBuild
-		{3F139999-C20A-4536-A659-17AC26418777}.Debug|Any CPU.ActiveCfg = DefaultBuild
-		{3F139999-C20A-4536-A659-17AC26418777}.Debug|Any CPU.Build.0 = DefaultBuild
-		{3F139999-C20A-4536-A659-17AC26418777}.Release|Any CPU.ActiveCfg = DefaultBuild
-		{3F139999-C20A-4536-A659-17AC26418777}.Release|Any CPU.Build.0 = DefaultBuild
+		{12A4B61E-6862-48D5-BE4C-9B033F13CB25}.All|Any CPU.ActiveCfg = DefaultBuild
+		{12A4B61E-6862-48D5-BE4C-9B033F13CB25}.All|Any CPU.Build.0 = DefaultBuild
+		{12A4B61E-6862-48D5-BE4C-9B033F13CB25}.Debug|Any CPU.ActiveCfg = DefaultBuild
+		{12A4B61E-6862-48D5-BE4C-9B033F13CB25}.Debug|Any CPU.Build.0 = DefaultBuild
+		{12A4B61E-6862-48D5-BE4C-9B033F13CB25}.Release|Any CPU.ActiveCfg = DefaultBuild
+		{12A4B61E-6862-48D5-BE4C-9B033F13CB25}.Release|Any CPU.Build.0 = DefaultBuild
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

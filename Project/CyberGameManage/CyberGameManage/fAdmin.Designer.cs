@@ -87,6 +87,12 @@
             this.dtpkToDate = new System.Windows.Forms.DateTimePicker();
             this.dtpkFromDate = new System.Windows.Forms.DateTimePicker();
             this.tcAdmin = new System.Windows.Forms.TabControl();
+            this.btnAddCp = new System.Windows.Forms.Button();
+            this.btnDeleteCp = new System.Windows.Forms.Button();
+            this.btnUpdateCp = new System.Windows.Forms.Button();
+            this.btnShowCp = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txbComputer = new System.Windows.Forms.TextBox();
             this.panel11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_exit)).BeginInit();
             this.tpAccount.SuspendLayout();
@@ -355,7 +361,7 @@
             this.pictureBox1.Image = global::CyberGameManage.Properties.Resources.Frenkie_de_Jong___FootyRenders1;
             this.pictureBox1.Location = new System.Drawing.Point(1022, 322);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(167, 292);
+            this.pictureBox1.Size = new System.Drawing.Size(167, 308);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 14;
             this.pictureBox1.TabStop = false;
@@ -799,6 +805,77 @@
             this.tcAdmin.Size = new System.Drawing.Size(1251, 641);
             this.tcAdmin.TabIndex = 0;
             // 
+            // btnAddCp
+            // 
+            this.btnAddCp.BackColor = System.Drawing.Color.DarkKhaki;
+            this.btnAddCp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnAddCp.Font = new System.Drawing.Font("Showcard Gothic", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddCp.ForeColor = System.Drawing.Color.White;
+            this.btnAddCp.Location = new System.Drawing.Point(35, 10);
+            this.btnAddCp.Name = "btnAddCp";
+            this.btnAddCp.Size = new System.Drawing.Size(75, 34);
+            this.btnAddCp.TabIndex = 8;
+            this.btnAddCp.Text = "Add";
+            this.btnAddCp.UseVisualStyleBackColor = false;
+            // 
+            // btnDeleteCp
+            // 
+            this.btnDeleteCp.BackColor = System.Drawing.Color.OrangeRed;
+            this.btnDeleteCp.Font = new System.Drawing.Font("Showcard Gothic", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDeleteCp.ForeColor = System.Drawing.Color.White;
+            this.btnDeleteCp.Location = new System.Drawing.Point(177, 11);
+            this.btnDeleteCp.Name = "btnDeleteCp";
+            this.btnDeleteCp.Size = new System.Drawing.Size(75, 34);
+            this.btnDeleteCp.TabIndex = 9;
+            this.btnDeleteCp.Text = "Delete";
+            this.btnDeleteCp.UseVisualStyleBackColor = false;
+            // 
+            // btnUpdateCp
+            // 
+            this.btnUpdateCp.BackColor = System.Drawing.Color.DarkCyan;
+            this.btnUpdateCp.Font = new System.Drawing.Font("Showcard Gothic", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdateCp.ForeColor = System.Drawing.Color.White;
+            this.btnUpdateCp.Location = new System.Drawing.Point(35, 56);
+            this.btnUpdateCp.Name = "btnUpdateCp";
+            this.btnUpdateCp.Size = new System.Drawing.Size(75, 37);
+            this.btnUpdateCp.TabIndex = 10;
+            this.btnUpdateCp.Text = "Update";
+            this.btnUpdateCp.UseVisualStyleBackColor = false;
+            // 
+            // btnShowCp
+            // 
+            this.btnShowCp.BackColor = System.Drawing.Color.Green;
+            this.btnShowCp.Font = new System.Drawing.Font("Showcard Gothic", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnShowCp.ForeColor = System.Drawing.Color.White;
+            this.btnShowCp.Location = new System.Drawing.Point(177, 56);
+            this.btnShowCp.Name = "btnShowCp";
+            this.btnShowCp.Size = new System.Drawing.Size(75, 37);
+            this.btnShowCp.TabIndex = 11;
+            this.btnShowCp.Text = "Show";
+            this.btnShowCp.UseVisualStyleBackColor = false;
+            // 
+            // label7
+            // 
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label7.Font = new System.Drawing.Font("Showcard Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(6, 13);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(126, 23);
+            this.label7.TabIndex = 6;
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // txbComputer
+            // 
+            this.txbComputer.BackColor = System.Drawing.Color.White;
+            this.txbComputer.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbComputer.ForeColor = System.Drawing.Color.Black;
+            this.txbComputer.Location = new System.Drawing.Point(138, 13);
+            this.txbComputer.Name = "txbComputer";
+            this.txbComputer.Size = new System.Drawing.Size(133, 25);
+            this.txbComputer.TabIndex = 7;
+            // 
             // fAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -908,5 +985,11 @@
         private System.Windows.Forms.DateTimePicker dtpkFromDate;
         private System.Windows.Forms.TabControl tcAdmin;
         private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Button btnAddCp;
+        private System.Windows.Forms.Button btnDeleteCp;
+        private System.Windows.Forms.Button btnUpdateCp;
+        private System.Windows.Forms.Button btnShowCp;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox txbComputer;
     }
 }

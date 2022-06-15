@@ -35,5 +35,27 @@ namespace CyberGameManage.DAO
             }
             return computerList;
         }
+        public bool InsertComputer(string name, string status)
+        {
+            string query = string.Format("INSERT dbo.Computer (name, status)VALUES  ( N'{0}', N'{1}')", name, status);
+            int result = DataProvider.Instance.ExecuteNonQuery(query);
+
+            return result > 0;
+        }
+        public bool UpdateComputer(string name, string status)
+        {
+            string query = string.Format("UPDATE dbo.Computer SET status = N'{1}' WHERE name = N'{0}'", name, status);
+            int result = DataProvider.Instance.ExecuteNonQuery(query);
+
+            return result > 0;
+        }
+
+        public bool DeleteComputer(string name)
+        {
+            string query = string.Format("Delete Account where name = N'{0}'", name);
+            int result = DataProvider.Instance.ExecuteNonQuery(query);
+
+            return result > 0;
+        }
     }
 }

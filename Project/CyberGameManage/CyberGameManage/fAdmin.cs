@@ -2,14 +2,7 @@
 using CyberGameManage.DTO;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
 using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CyberGameManage
@@ -28,6 +21,7 @@ namespace CyberGameManage
         );
         BindingSource orderList = new BindingSource();
         BindingSource accountList = new BindingSource();
+        BindingSource computerList = new BindingSource();
         public fAdmin()
         {
             InitializeComponent();
@@ -46,6 +40,7 @@ namespace CyberGameManage
         {
             dtgvOrder.DataSource = orderList;
             dtgvAccount.DataSource = accountList;
+            //dtgvComputer.DataSource = computerList;
             LoadDateTimePickerBill();
             LoadListBillByDate(dtpkFromDate.Value, dtpkToDate.Value);
             //LoadAccountList();
@@ -53,7 +48,9 @@ namespace CyberGameManage
             LoadAccount();
             AddOrderBinding();
             AddAccountBinding();
+            //AddComputerBinding();
             LoadCategoryIntoCombobox(cbOrderCategory);
+            LoadComputer();
         }
         #region methods
 
@@ -73,6 +70,13 @@ namespace CyberGameManage
         {
             dtgvBill.DataSource = BillDAO.Instance.GetBillListByDate(checkIn, checkOut);
         }
+
+        //void AddComputerBinding()
+        //{
+        //    txbComputer.DataBindings.Add(new Binding("Text", dtgvComputer.DataSource, "Name", true, DataSourceUpdateMode.Never));
+        //    txbStatus.DataBindings.Add(new Binding("Text", dtgvComputer.DataSource, "Status", true, DataSourceUpdateMode.Never));
+
+        //}
         #endregion
 
         void AddOrderBinding()
@@ -95,6 +99,11 @@ namespace CyberGameManage
         void LoadAccount()
         {
             accountList.DataSource = AccountDAO.Instance.GetListAccount();
+        }
+
+        void LoadComputer()
+        {
+            computerList.DataSource = ComputerDAO.Instance.LoadComputerList();
         }
         #region events
         private void btnViewBill_Click(object sender, EventArgs e)
@@ -122,6 +131,7 @@ namespace CyberGameManage
             add { updateOrder += value; }
             remove { updateOrder -= value; }
         }
+    
 
         private void btnShowOrder_Click(object sender, EventArgs e)
         {
@@ -214,7 +224,6 @@ namespace CyberGameManage
         #endregion
 
 
-
         void AddAccount(string userName, string displayName, int type)
         {
             if (AccountDAO.Instance.InsertAccount(userName, displayName, type))
@@ -277,6 +286,7 @@ namespace CyberGameManage
             orderList.DataSource = SearchOrderByName(txbSearchOrderName.Text);
         }
 
+       
         private void btnAddAccount_Click(object sender, EventArgs e)
         {
             string userName = txbUserName.Text;
@@ -357,5 +367,7 @@ namespace CyberGameManage
         {
             this.Close();
         }
+
+        
     }
 }

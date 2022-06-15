@@ -183,6 +183,16 @@ namespace CyberGameManage.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap desktop1 {
+            get {
+                object obj = ResourceManager.GetObject("desktop1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Dice_Cube_Die_One_1_Game_Luck {
             get {
                 object obj = ResourceManager.GetObject("Dice Cube Die One 1 Game Luck", resourceCulture);
@@ -256,6 +266,16 @@ namespace CyberGameManage.Properties {
         internal static System.Drawing.Bitmap kissclipart_xbox_joystick_icon_clipart_xbox_360_controller_joy_cf39a587c3fd1c10 {
             get {
                 object obj = ResourceManager.GetObject("kissclipart-xbox-joystick-icon-clipart-xbox-360-controller-joy-cf39a587c3fd1c10", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap lixiii1 {
+            get {
+                object obj = ResourceManager.GetObject("lixiii1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -426,16 +446,6 @@ namespace CyberGameManage.Properties {
         internal static System.Drawing.Bitmap PCC1231 {
             get {
                 object obj = ResourceManager.GetObject("PCC1231", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap PCC2 {
-            get {
-                object obj = ResourceManager.GetObject("PCC2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

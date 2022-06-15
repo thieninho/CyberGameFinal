@@ -1,10 +1,5 @@
 ﻿using CyberGameManage.DTO;
-using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CyberGameManage.DAO
 {
@@ -21,7 +16,7 @@ namespace CyberGameManage.DAO
         {
             string query = "USP_Login @userName , @passWord";
 
-            DataTable result = DataProvider.Instance.ExecuteQuery(query , new object[] {userName, passWord});
+            DataTable result = DataProvider.Instance.ExecuteQuery(query, new object[] { userName, passWord });
 
             return result.Rows.Count > 0;
         }
