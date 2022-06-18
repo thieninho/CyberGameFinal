@@ -368,6 +368,11 @@ namespace CyberGameManage
             this.Close();
         }
 
-        
+        private void fAdmin_Load(object sender, EventArgs e)
+        {
+            this.uSP_GetListBillByDateForReportTableAdapter.Fill(this.dataSetQuanLyQuanNet.USP_GetListBillByDateForReport, dtpkFromDate.Value, dtpkToDate.Value);
+
+            this.reportViewer1.RefreshReport();
+        }
     }
 }

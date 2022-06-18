@@ -14,7 +14,7 @@ namespace CyberGameManage.DAO
     public class DataProvider
     {
         private static DataProvider instance;
-        private string connectionSTR = @"Data Source=MYLOVE\THIEN;Initial Catalog=QuanLyQuanNet;Integrated Security=True";
+        private string connectionSTR = @"Data Source=MYLOVE\THIEN;Initial Catalog=QuanLyQuanNet2;Integrated Security=True";
 
         public static DataProvider Instance
         {

@@ -28,9 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fAdmin));
             this.panel11 = new System.Windows.Forms.Panel();
-            this.ptb_exit = new System.Windows.Forms.PictureBox();
             this.tpAccount = new System.Windows.Forms.TabPage();
             this.dtgvAccount = new System.Windows.Forms.DataGridView();
             this.panel24 = new System.Windows.Forms.Panel();
@@ -49,9 +50,7 @@
             this.btnEditAccount = new System.Windows.Forms.Button();
             this.btnDeleteAccount = new System.Windows.Forms.Button();
             this.btnAddAccount = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tpOrder = new System.Windows.Forms.TabPage();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.dtgvOrder = new System.Windows.Forms.DataGridView();
             this.panel6 = new System.Windows.Forms.Panel();
             this.txbSearchOrderName = new System.Windows.Forms.TextBox();
@@ -93,8 +92,16 @@
             this.btnShowCp = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.txbComputer = new System.Windows.Forms.TextBox();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.dataSetQuanLyQuanNet = new CyberGameManage.DataSetQuanLyQuanNet();
+            this.uSPGetListBillByDateForReportBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.uSP_GetListBillByDateForReportTableAdapter = new CyberGameManage.DataSetQuanLyQuanNetTableAdapters.USP_GetListBillByDateForReportTableAdapter();
+            this.ptb_exit = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel11.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptb_exit)).BeginInit();
             this.tpAccount.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvAccount)).BeginInit();
             this.panel24.SuspendLayout();
@@ -103,9 +110,7 @@
             this.panel26.SuspendLayout();
             this.panel27.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tpOrder.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvOrder)).BeginInit();
             this.panel6.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -120,6 +125,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.dtgvBill)).BeginInit();
             this.panel22.SuspendLayout();
             this.tcAdmin.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSetQuanLyQuanNet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uSPGetListBillByDateForReportBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_exit)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // panel11
@@ -129,17 +141,6 @@
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(151, 30);
             this.panel11.TabIndex = 3;
-            // 
-            // ptb_exit
-            // 
-            this.ptb_exit.Image = global::CyberGameManage.Properties.Resources.x;
-            this.ptb_exit.Location = new System.Drawing.Point(117, 0);
-            this.ptb_exit.Name = "ptb_exit";
-            this.ptb_exit.Size = new System.Drawing.Size(34, 30);
-            this.ptb_exit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ptb_exit.TabIndex = 14;
-            this.ptb_exit.TabStop = false;
-            this.ptb_exit.Click += new System.EventHandler(this.ptb_exit_Click);
             // 
             // tpAccount
             // 
@@ -356,16 +357,6 @@
             this.btnAddAccount.UseVisualStyleBackColor = false;
             this.btnAddAccount.Click += new System.EventHandler(this.btnAddAccount_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::CyberGameManage.Properties.Resources.Frenkie_de_Jong___FootyRenders1;
-            this.pictureBox1.Location = new System.Drawing.Point(1022, 322);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(167, 308);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 14;
-            this.pictureBox1.TabStop = false;
-            // 
             // tpOrder
             // 
             this.tpOrder.BackColor = System.Drawing.Color.Black;
@@ -379,16 +370,6 @@
             this.tpOrder.Size = new System.Drawing.Size(1243, 610);
             this.tpOrder.TabIndex = 1;
             this.tpOrder.Text = "Order";
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::CyberGameManage.Properties.Resources.Daco_46505691;
-            this.pictureBox4.Location = new System.Drawing.Point(952, 453);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(285, 151);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 3;
-            this.pictureBox4.TabStop = false;
             // 
             // dtgvOrder
             // 
@@ -459,6 +440,11 @@
             this.nmOrderPrice.BackColor = System.Drawing.Color.White;
             this.nmOrderPrice.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nmOrderPrice.ForeColor = System.Drawing.Color.Black;
+            this.nmOrderPrice.Increment = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
             this.nmOrderPrice.Location = new System.Drawing.Point(90, 12);
             this.nmOrderPrice.Maximum = new decimal(new int[] {
             100000000,
@@ -798,6 +784,7 @@
             this.tcAdmin.Controls.Add(this.tpBill);
             this.tcAdmin.Controls.Add(this.tpOrder);
             this.tcAdmin.Controls.Add(this.tpAccount);
+            this.tcAdmin.Controls.Add(this.tabPage1);
             this.tcAdmin.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tcAdmin.Location = new System.Drawing.Point(12, 12);
             this.tcAdmin.Name = "tcAdmin";
@@ -876,6 +863,87 @@
             this.txbComputer.Size = new System.Drawing.Size(133, 25);
             this.txbComputer.TabIndex = 7;
             // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.pictureBox3);
+            this.tabPage1.Controls.Add(this.reportViewer1);
+            this.tabPage1.Location = new System.Drawing.Point(4, 27);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(1243, 610);
+            this.tabPage1.TabIndex = 5;
+            this.tabPage1.Text = "Report";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // reportViewer1
+            // 
+            this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Left;
+            reportDataSource1.Name = "DataSetQuanLyQuanNet";
+            reportDataSource1.Value = this.uSPGetListBillByDateForReportBindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "CyberGameManage.Report.rdlc";
+            this.reportViewer1.Location = new System.Drawing.Point(3, 3);
+            this.reportViewer1.Name = "reportViewer1";
+            this.reportViewer1.ServerReport.BearerToken = null;
+            this.reportViewer1.Size = new System.Drawing.Size(800, 604);
+            this.reportViewer1.TabIndex = 0;
+            // 
+            // dataSetQuanLyQuanNet
+            // 
+            this.dataSetQuanLyQuanNet.DataSetName = "DataSetQuanLyQuanNet";
+            this.dataSetQuanLyQuanNet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // uSPGetListBillByDateForReportBindingSource
+            // 
+            this.uSPGetListBillByDateForReportBindingSource.DataMember = "USP_GetListBillByDateForReport";
+            this.uSPGetListBillByDateForReportBindingSource.DataSource = this.dataSetQuanLyQuanNet;
+            // 
+            // uSP_GetListBillByDateForReportTableAdapter
+            // 
+            this.uSP_GetListBillByDateForReportTableAdapter.ClearBeforeFill = true;
+            // 
+            // ptb_exit
+            // 
+            this.ptb_exit.Image = global::CyberGameManage.Properties.Resources.x;
+            this.ptb_exit.Location = new System.Drawing.Point(117, 0);
+            this.ptb_exit.Name = "ptb_exit";
+            this.ptb_exit.Size = new System.Drawing.Size(34, 30);
+            this.ptb_exit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptb_exit.TabIndex = 14;
+            this.ptb_exit.TabStop = false;
+            this.ptb_exit.Click += new System.EventHandler(this.ptb_exit_Click);
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::CyberGameManage.Properties.Resources.Daco_46505691;
+            this.pictureBox4.Location = new System.Drawing.Point(952, 453);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(285, 151);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 3;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::CyberGameManage.Properties.Resources.Frenkie_de_Jong___FootyRenders1;
+            this.pictureBox1.Location = new System.Drawing.Point(1022, 322);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(167, 308);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 14;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox3.Image = global::CyberGameManage.Properties.Resources.f78dff9a279e57929e3a6fc86948ab99;
+            this.pictureBox3.Location = new System.Drawing.Point(809, 3);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(431, 604);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 2;
+            this.pictureBox3.TabStop = false;
+            // 
             // fAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -889,8 +957,8 @@
             this.Name = "fAdmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Admin";
+            this.Load += new System.EventHandler(this.fAdmin_Load);
             this.panel11.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.ptb_exit)).EndInit();
             this.tpAccount.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtgvAccount)).EndInit();
             this.panel24.ResumeLayout(false);
@@ -901,9 +969,7 @@
             this.panel27.ResumeLayout(false);
             this.panel27.PerformLayout();
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tpOrder.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvOrder)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
@@ -922,6 +988,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.dtgvBill)).EndInit();
             this.panel22.ResumeLayout(false);
             this.tcAdmin.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataSetQuanLyQuanNet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uSPGetListBillByDateForReportBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_exit)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -991,5 +1064,11 @@
         private System.Windows.Forms.Button btnShowCp;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txbComputer;
+        private System.Windows.Forms.TabPage tabPage1;
+        private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
+        private System.Windows.Forms.BindingSource uSPGetListBillByDateForReportBindingSource;
+        private DataSetQuanLyQuanNet dataSetQuanLyQuanNet;
+        private DataSetQuanLyQuanNetTableAdapters.USP_GetListBillByDateForReportTableAdapter uSP_GetListBillByDateForReportTableAdapter;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }

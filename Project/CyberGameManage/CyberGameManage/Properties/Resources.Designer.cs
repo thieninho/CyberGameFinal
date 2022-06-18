@@ -223,6 +223,16 @@ namespace CyberGameManage.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap f78dff9a279e57929e3a6fc86948ab99 {
+            get {
+                object obj = ResourceManager.GetObject("f78dff9a279e57929e3a6fc86948ab99", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap faker {
             get {
                 object obj = ResourceManager.GetObject("faker", resourceCulture);
@@ -466,6 +476,16 @@ namespace CyberGameManage.Properties {
         internal static System.Drawing.Bitmap star {
             get {
                 object obj = ResourceManager.GetObject("star", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap statistical111 {
+            get {
+                object obj = ResourceManager.GetObject("statistical111", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -1,7 +1,7 @@
-﻿CREATE DATABASE QuanLyQuanNet
+﻿CREATE DATABASE QuanLyQuanNet2
 GO
 
-USE QuanLyQuanNet
+USE QuanLyQuanNet2
 GO
 
 -- Order
@@ -115,7 +115,7 @@ BEGIN
 END
 GO
 -- Thêm máy
-DECLARE @i INT = 0 
+DECLARE @i INT = 1 
 
 WHILE @i <= 30
 BEGIN
@@ -346,9 +346,9 @@ BEGIN
 END
 GO
 
-DELETE dbo.BillInfo
+--DELETE dbo.BillInfo
 
-DELETE dbo.Bill
+--DELETE dbo.Bill
 
 CREATE TRIGGER UTG_UpdateBillInfo
 ON dbo.BillInfo FOR INSERT, UPDATE
@@ -408,7 +408,7 @@ BEGIN
 END
 GO
 
-CREATE TABLE dbo.Bill
+ALTER TABLE dbo.Bill
 ADD discount INT
 
 UPDATE dbo.Bill SET discount = 0
@@ -503,7 +503,7 @@ EXEC dbo.USP_SwitchComputer
 @idComputer1 = 1,
 	@idComputer2 = 2
 
-CREATE TABLE dbo.Bill ADD totalPrice FLOAT
+ALTER TABLE dbo.Bill ADD totalPrice FLOAT
 
 DELETE dbo.BillInfo
 DELETE dbo.Bill
@@ -586,6 +586,17 @@ CREATE PROC USP_GetNumBillByDate
 AS 
 BEGIN
 	SELECT COUNT(*)
+	FROM dbo.Bill AS b,dbo.ComputerOrder AS t
+	WHERE DateCheckIn >= @checkIn AND DateCheckOut <= @checkOut AND b.status = 1
+	AND t.id = b.idComputer
+END
+GO
+
+CREATE PROC USP_GetListBillByDateForReport
+@checkIn date, @checkOut date
+AS 
+BEGIN
+	SELECT t.name, b.totalPrice, DateCheckIn, DateCheckOut, discount
 	FROM dbo.Bill AS b,dbo.ComputerOrder AS t
 	WHERE DateCheckIn >= @checkIn AND DateCheckOut <= @checkOut AND b.status = 1
 	AND t.id = b.idComputer
